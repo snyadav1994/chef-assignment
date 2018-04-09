@@ -5,3 +5,14 @@
 ###
 .chef/*.pem
 .chef/encrypted_data_bag_secret
+
+chefignore
+data_bags
+role
+chef-solo.log
+environments
+LICENSE
+nodes
+.chef
+local-mode-cache
+

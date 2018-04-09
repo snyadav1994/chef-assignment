@@ -1,11 +1,41 @@
-Generated at 2018-04-09 05:54:51 +0000
-Chef::Exceptions::Package: yum_package[jenkins] (sneha-jenkins::default line 14) had an error: Chef::Exceptions::Package: No candidate version available for jenkins
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:240:in `run'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:321:in `block in run'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:320:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:320:in `run'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:181:in `process_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:159:in `run_action'
+Generated at 2018-04-09 09:25:44 +0000
+Chef::Exceptions::Exec: manageJenkins[install] (sneha-jenkins::default line 21) had an error: Chef::Exceptions::Exec: yum_package[jenkins] (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 6) had an error: Chef::Exceptions::Exec: yum -d0 -e0 -y install jenkins-2.114-1.1 returned 1:
+STDOUT: Public key for jenkins-2.114-1.1.noarch.rpm is not installed
+
+STDERR: warning: /var/cache/yum/x86_64/latest/jenkins/packages/jenkins-2.114-1.1.noarch.rpm: Header V4 DSA/SHA1 Signature, key ID d50582e6: NOKEY
+
+
+Public key for jenkins-2.114-1.1.noarch.rpm is not installed
+
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package/yum.rb:277:in `yum_command'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package/yum.rb:339:in `install_remote_package'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package/yum.rb:123:in `install_package'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:102:in `block (3 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:258:in `multipackage_api_adapter'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:101:in `block (2 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:52:in `add_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:202:in `converge_by'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:100:in `block in <class:Package>'
+(eval):2:in `block in action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:211:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:211:in `compile_and_converge_action'
+(eval):2:in `action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:171:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource.rb:591:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:70:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `block (2 levels) in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `block in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/resource_list.rb:94:in `block in execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:114:in `call_iterator_block'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:103:in `iterate'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/resource_list.rb:92:in `execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:97:in `converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:212:in `compile_and_converge_action'
+(eval):2:in `action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:171:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource.rb:591:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:70:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `block (2 levels) in converge'
@@ -40,13 +70,43 @@ Chef::Exceptions::Package: yum_package[jenkins] (sneha-jenkins::default line 14)
 /usr/bin/chef-solo:250:in `load'
 /usr/bin/chef-solo:250:in `<main>'
 
->>>> Caused by Chef::Exceptions::Package: No candidate version available for jenkins
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:240:in `run'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:321:in `block in run'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:320:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:320:in `run'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:181:in `process_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:159:in `run_action'
+>>>> Caused by Chef::Exceptions::Exec: yum -d0 -e0 -y install jenkins-2.114-1.1 returned 1:
+STDOUT: Public key for jenkins-2.114-1.1.noarch.rpm is not installed
+
+STDERR: warning: /var/cache/yum/x86_64/latest/jenkins/packages/jenkins-2.114-1.1.noarch.rpm: Header V4 DSA/SHA1 Signature, key ID d50582e6: NOKEY
+
+
+Public key for jenkins-2.114-1.1.noarch.rpm is not installed
+
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package/yum.rb:277:in `yum_command'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package/yum.rb:339:in `install_remote_package'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package/yum.rb:123:in `install_package'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:102:in `block (3 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:258:in `multipackage_api_adapter'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:101:in `block (2 levels) in <class:Package>'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/why_run.rb:52:in `add_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:202:in `converge_by'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider/package.rb:100:in `block in <class:Package>'
+(eval):2:in `block in action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:211:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:211:in `compile_and_converge_action'
+(eval):2:in `action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:171:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource.rb:591:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:70:in `run_action'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `block (2 levels) in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `block in converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/resource_list.rb:94:in `block in execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:114:in `call_iterator_block'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:103:in `iterate'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource_collection/resource_list.rb:92:in `execute_each_resource'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:97:in `converge'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:212:in `compile_and_converge_action'
+(eval):2:in `action_install'
+/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/provider.rb:171:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/resource.rb:591:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:70:in `run_action'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/runner.rb:98:in `block (2 levels) in converge'
