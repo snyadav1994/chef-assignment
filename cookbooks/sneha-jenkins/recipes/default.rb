@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 # Copyright:: 2018, The Authors, All Rights Reserved
-#
+
 #installing java 
 execute 'yum install' do
  command "yum install java-1.8.0-openjdk"
