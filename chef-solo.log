@@ -143,3 +143,229 @@
 [2018-04-09T05:54:51+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
 [2018-04-09T05:54:51+00:00] ERROR: yum_package[jenkins] (sneha-jenkins::default line 14) had an error: Chef::Exceptions::Package: No candidate version available for jenkins
 [2018-04-09T05:54:51+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T08:15:52+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/ec2-user/chef-repo
+  One version per cookbook
+
+[2018-04-09T08:15:52+00:00] INFO: Forking chef instance to converge...
+[2018-04-09T08:15:52+00:00] INFO: *** Chef 13.8.5 ***
+[2018-04-09T08:15:52+00:00] INFO: Platform: x86_64-linux
+[2018-04-09T08:15:52+00:00] INFO: Chef-client pid: 26154
+[2018-04-09T08:15:52+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T08:15:54+00:00] INFO: Setting the run_list to ["recipe[sneha-jenkins::default]"] from CLI options
+[2018-04-09T08:15:54+00:00] INFO: Run List is [recipe[sneha-jenkins::default]]
+[2018-04-09T08:15:54+00:00] INFO: Run List expands to [sneha-jenkins::default]
+[2018-04-09T08:15:54+00:00] INFO: Starting Chef Run for ip-10-1-1-145
+[2018-04-09T08:15:54+00:00] INFO: Running start handlers
+[2018-04-09T08:15:54+00:00] INFO: Start handlers complete.
+[2018-04-09T08:15:54+00:00] INFO: Loading cookbooks [sneha-jenkins@0.1.0]
+[2018-04-09T08:15:54+00:00] INFO: Storing updated cookbooks/sneha-jenkins/attributes/file.rb in the cache.
+[2018-04-09T08:15:54+00:00] INFO: Storing updated cookbooks/sneha-jenkins/recipes/default.rb in the cache.
+[2018-04-09T08:15:54+00:00] INFO: Processing execute[install java] action run (sneha-jenkins::default line 8)
+[2018-04-09T08:15:54+00:00] INFO: execute[install java] ran successfully
+[2018-04-09T08:15:54+00:00] INFO: Processing yum_package[jenkins] action install (sneha-jenkins::default line 14)
+[2018-04-09T08:15:57+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-09T08:15:57+00:00] ERROR: Running exception handlers
+[2018-04-09T08:15:57+00:00] ERROR: Exception handlers complete
+[2018-04-09T08:15:57+00:00] FATAL: Stacktrace dumped to /home/ec2-user/chef-repo/.chef/cache/chef-stacktrace.out
+[2018-04-09T08:15:57+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-09T08:15:57+00:00] ERROR: yum_package[jenkins] (sneha-jenkins::default line 14) had an error: Chef::Exceptions::Package: No candidate version available for jenkins
+[2018-04-09T08:15:57+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T09:07:46+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/ec2-user/chef-repo
+  One version per cookbook
+
+[2018-04-09T09:07:46+00:00] INFO: Forking chef instance to converge...
+[2018-04-09T09:07:46+00:00] INFO: *** Chef 13.8.5 ***
+[2018-04-09T09:07:46+00:00] INFO: Platform: x86_64-linux
+[2018-04-09T09:07:46+00:00] INFO: Chef-client pid: 26924
+[2018-04-09T09:07:46+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T09:07:47+00:00] INFO: Setting the run_list to ["recipe[sneha-jenkins::default]"] from CLI options
+[2018-04-09T09:07:47+00:00] INFO: Run List is [recipe[sneha-jenkins::default]]
+[2018-04-09T09:07:47+00:00] INFO: Run List expands to [sneha-jenkins::default]
+[2018-04-09T09:07:47+00:00] INFO: Starting Chef Run for ip-10-1-1-145
+[2018-04-09T09:07:47+00:00] INFO: Running start handlers
+[2018-04-09T09:07:47+00:00] INFO: Start handlers complete.
+[2018-04-09T09:07:47+00:00] INFO: Loading cookbooks [sneha-jenkins@0.1.0]
+[2018-04-09T09:07:47+00:00] INFO: Storing updated cookbooks/sneha-jenkins/attributes/file.rb in the cache.
+[2018-04-09T09:07:47+00:00] INFO: Storing updated cookbooks/sneha-jenkins/templates/jenkins.repository.erb in the cache.
+[2018-04-09T09:07:47+00:00] INFO: Storing updated cookbooks/sneha-jenkins/recipes/default.rb in the cache.
+[2018-04-09T09:07:47+00:00] INFO: Processing execute[install java] action run (sneha-jenkins::default line 8)
+[2018-04-09T09:07:48+00:00] INFO: execute[install java] ran successfully
+[2018-04-09T09:07:48+00:00] INFO: Processing template[/etc/yum.repos.d/jenkins.repo] action create (sneha-jenkins::default line 14)
+[2018-04-09T09:07:48+00:00] INFO: template[/etc/yum.repos.d/jenkins.repo] created file /etc/yum.repos.d/jenkins.repo
+[2018-04-09T09:07:48+00:00] INFO: template[/etc/yum.repos.d/jenkins.repo] updated file contents /etc/yum.repos.d/jenkins.repo
+[2018-04-09T09:07:48+00:00] INFO: template[/etc/yum.repos.d/jenkins.repo] owner changed to 0
+[2018-04-09T09:07:48+00:00] INFO: template[/etc/yum.repos.d/jenkins.repo] group changed to 0
+[2018-04-09T09:07:48+00:00] INFO: Processing service[jenkins] action enable (sneha-jenkins::default line 21)
+[2018-04-09T09:07:48+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-09T09:07:48+00:00] ERROR: Running exception handlers
+[2018-04-09T09:07:48+00:00] ERROR: Exception handlers complete
+[2018-04-09T09:07:48+00:00] FATAL: Stacktrace dumped to /home/ec2-user/chef-repo/.chef/cache/chef-stacktrace.out
+[2018-04-09T09:07:48+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-09T09:07:48+00:00] ERROR: service[jenkins] (sneha-jenkins::default line 21) had an error: Chef::Exceptions::Service: service[jenkins]: Service is not known to chkconfig.
+[2018-04-09T09:07:48+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T09:22:14+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/ec2-user/chef-repo
+  One version per cookbook
+
+[2018-04-09T09:22:14+00:00] INFO: Forking chef instance to converge...
+[2018-04-09T09:22:14+00:00] INFO: *** Chef 13.8.5 ***
+[2018-04-09T09:22:14+00:00] INFO: Platform: x86_64-linux
+[2018-04-09T09:22:14+00:00] INFO: Chef-client pid: 27263
+[2018-04-09T09:22:14+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T09:22:16+00:00] INFO: Setting the run_list to ["recipe[sneha-jenkins::default]"] from CLI options
+[2018-04-09T09:22:16+00:00] INFO: Run List is [recipe[sneha-jenkins::default]]
+[2018-04-09T09:22:16+00:00] INFO: Run List expands to [sneha-jenkins::default]
+[2018-04-09T09:22:16+00:00] INFO: Starting Chef Run for ip-10-1-1-145
+[2018-04-09T09:22:16+00:00] INFO: Running start handlers
+[2018-04-09T09:22:16+00:00] INFO: Start handlers complete.
+[2018-04-09T09:22:16+00:00] INFO: Loading cookbooks [sneha-jenkins@0.1.0]
+[2018-04-09T09:22:16+00:00] INFO: Storing updated cookbooks/sneha-jenkins/resources/manageJenkins.rb in the cache.
+[2018-04-09T09:22:16+00:00] INFO: Storing updated cookbooks/sneha-jenkins/recipes/default.rb in the cache.
+[2018-04-09T09:22:16+00:00] ERROR: Running exception handlers
+[2018-04-09T09:22:16+00:00] ERROR: Exception handlers complete
+[2018-04-09T09:22:16+00:00] FATAL: Stacktrace dumped to /home/ec2-user/chef-repo/.chef/cache/chef-stacktrace.out
+[2018-04-09T09:22:16+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-09T09:22:16+00:00] ERROR: /home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb:3: syntax error, unexpected ':', expecting end-of-input
+resource_name : manageJenkins
+               ^
+[2018-04-09T09:22:16+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T09:25:26+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/ec2-user/chef-repo
+  One version per cookbook
+
+[2018-04-09T09:25:26+00:00] INFO: Forking chef instance to converge...
+[2018-04-09T09:25:26+00:00] INFO: *** Chef 13.8.5 ***
+[2018-04-09T09:25:26+00:00] INFO: Platform: x86_64-linux
+[2018-04-09T09:25:26+00:00] INFO: Chef-client pid: 27543
+[2018-04-09T09:25:26+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T09:25:27+00:00] INFO: Setting the run_list to ["recipe[sneha-jenkins::default]"] from CLI options
+[2018-04-09T09:25:27+00:00] INFO: Run List is [recipe[sneha-jenkins::default]]
+[2018-04-09T09:25:27+00:00] INFO: Run List expands to [sneha-jenkins::default]
+[2018-04-09T09:25:27+00:00] INFO: Starting Chef Run for ip-10-1-1-145
+[2018-04-09T09:25:27+00:00] INFO: Running start handlers
+[2018-04-09T09:25:27+00:00] INFO: Start handlers complete.
+[2018-04-09T09:25:27+00:00] INFO: Loading cookbooks [sneha-jenkins@0.1.0]
+[2018-04-09T09:25:27+00:00] INFO: Storing updated cookbooks/sneha-jenkins/resources/manageJenkins.rb in the cache.
+[2018-04-09T09:25:27+00:00] INFO: Processing execute[install java] action run (sneha-jenkins::default line 8)
+[2018-04-09T09:25:29+00:00] INFO: execute[install java] ran successfully
+[2018-04-09T09:25:29+00:00] INFO: Processing template[/etc/yum.repos.d/jenkins.repo] action create (sneha-jenkins::default line 14)
+[2018-04-09T09:25:29+00:00] INFO: Processing manageJenkins[install] action install (sneha-jenkins::default line 21)
+[2018-04-09T09:25:29+00:00] INFO: Processing yum_package[jenkins] action install (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 6)
+[2018-04-09T09:25:30+00:00] INFO: yum_package[jenkins] installing jenkins-2.114-1.1 from jenkins repository
+[2018-04-09T09:25:44+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-09T09:25:44+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-09T09:25:44+00:00] ERROR: Running exception handlers
+[2018-04-09T09:25:44+00:00] ERROR: Exception handlers complete
+[2018-04-09T09:25:44+00:00] FATAL: Stacktrace dumped to /home/ec2-user/chef-repo/.chef/cache/chef-stacktrace.out
+[2018-04-09T09:25:44+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-09T09:25:44+00:00] ERROR: manageJenkins[install] (sneha-jenkins::default line 21) had an error: Chef::Exceptions::Exec: yum_package[jenkins] (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 6) had an error: Chef::Exceptions::Exec: yum -d0 -e0 -y install jenkins-2.114-1.1 returned 1:
+STDOUT: Public key for jenkins-2.114-1.1.noarch.rpm is not installed
+
+STDERR: warning: /var/cache/yum/x86_64/latest/jenkins/packages/jenkins-2.114-1.1.noarch.rpm: Header V4 DSA/SHA1 Signature, key ID d50582e6: NOKEY
+
+
+Public key for jenkins-2.114-1.1.noarch.rpm is not installed
+
+[2018-04-09T09:25:44+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T09:29:35+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/ec2-user/chef-repo
+  One version per cookbook
+
+[2018-04-09T09:29:35+00:00] INFO: Forking chef instance to converge...
+[2018-04-09T09:29:35+00:00] INFO: *** Chef 13.8.5 ***
+[2018-04-09T09:29:35+00:00] INFO: Platform: x86_64-linux
+[2018-04-09T09:29:35+00:00] INFO: Chef-client pid: 27838
+[2018-04-09T09:29:35+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T09:29:37+00:00] INFO: Setting the run_list to ["recipe[sneha-jenkins::default]"] from CLI options
+[2018-04-09T09:29:37+00:00] INFO: Run List is [recipe[sneha-jenkins::default]]
+[2018-04-09T09:29:37+00:00] INFO: Run List expands to [sneha-jenkins::default]
+[2018-04-09T09:29:37+00:00] INFO: Starting Chef Run for ip-10-1-1-145
+[2018-04-09T09:29:37+00:00] INFO: Running start handlers
+[2018-04-09T09:29:37+00:00] INFO: Start handlers complete.
+[2018-04-09T09:29:37+00:00] INFO: Loading cookbooks [sneha-jenkins@0.1.0]
+[2018-04-09T09:29:37+00:00] INFO: Storing updated cookbooks/sneha-jenkins/templates/jenkins.repository.erb in the cache.
+[2018-04-09T09:29:37+00:00] INFO: Processing execute[install java] action run (sneha-jenkins::default line 8)
+[2018-04-09T09:29:38+00:00] INFO: execute[install java] ran successfully
+[2018-04-09T09:29:38+00:00] INFO: Processing template[/etc/yum.repos.d/jenkins.repo] action create (sneha-jenkins::default line 14)
+[2018-04-09T09:29:38+00:00] INFO: template[/etc/yum.repos.d/jenkins.repo] backed up to /home/ec2-user/chef-repo/local-mode-cache/backup/etc/yum.repos.d/jenkins.repo.chef-20180409092938.066813
+[2018-04-09T09:29:38+00:00] INFO: template[/etc/yum.repos.d/jenkins.repo] updated file contents /etc/yum.repos.d/jenkins.repo
+[2018-04-09T09:29:38+00:00] INFO: Processing manageJenkins[install] action install (sneha-jenkins::default line 21)
+[2018-04-09T09:29:38+00:00] INFO: Processing yum_package[jenkins] action install (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 6)
+[2018-04-09T09:29:40+00:00] INFO: yum_package[jenkins] installing jenkins-2.114-1.1 from jenkins repository
+[2018-04-09T09:29:42+00:00] INFO: yum_package[jenkins] installed jenkins at 2.114-1.1
+[2018-04-09T09:29:42+00:00] INFO: Processing service[jenkins] action enable (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 8)
+[2018-04-09T09:29:42+00:00] INFO: Processing service[jenkins] action start (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 8)
+[2018-04-09T09:29:43+00:00] INFO: service[jenkins] started
+[2018-04-09T09:29:43+00:00] INFO: Processing service[jenkins] action enable (sneha-jenkins::default line 25)
+[2018-04-09T09:29:43+00:00] INFO: Processing service[jenkins] action start (sneha-jenkins::default line 25)
+[2018-04-09T09:29:44+00:00] INFO: service[jenkins] started
+[2018-04-09T09:29:44+00:00] INFO: Chef Run complete in 6.932940789 seconds
+[2018-04-09T09:29:44+00:00] INFO: Running report handlers
+[2018-04-09T09:29:44+00:00] INFO: Report handlers complete
+[2018-04-09T09:29:44+00:00] WARN: *****************************************
+[2018-04-09T09:29:44+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2018-04-09T09:29:44+00:00] WARN: *****************************************
+[2018-04-09T09:29:44+00:00] FATAL: Cannot load configuration from node.json
+[2018-04-09T09:32:15+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/ec2-user/chef-repo
+  One version per cookbook
+
+[2018-04-09T09:32:15+00:00] INFO: Forking chef instance to converge...
+[2018-04-09T09:32:15+00:00] INFO: *** Chef 13.8.5 ***
+[2018-04-09T09:32:15+00:00] INFO: Platform: x86_64-linux
+[2018-04-09T09:32:15+00:00] INFO: Chef-client pid: 28317
+[2018-04-09T09:32:15+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T09:32:16+00:00] INFO: Setting the run_list to ["recipe[sneha-jenkins::default]"] from CLI options
+[2018-04-09T09:32:16+00:00] INFO: Run List is [recipe[sneha-jenkins::default]]
+[2018-04-09T09:32:16+00:00] INFO: Run List expands to [sneha-jenkins::default]
+[2018-04-09T09:32:16+00:00] INFO: Starting Chef Run for ip-10-1-1-145
+[2018-04-09T09:32:16+00:00] INFO: Running start handlers
+[2018-04-09T09:32:16+00:00] INFO: Start handlers complete.
+[2018-04-09T09:32:16+00:00] INFO: Loading cookbooks [sneha-jenkins@0.1.0]
+[2018-04-09T09:32:16+00:00] INFO: Processing execute[install java] action run (sneha-jenkins::default line 8)
+[2018-04-09T09:32:17+00:00] INFO: execute[install java] ran successfully
+[2018-04-09T09:32:17+00:00] INFO: Processing template[/etc/yum.repos.d/jenkins.repo] action create (sneha-jenkins::default line 14)
+[2018-04-09T09:32:17+00:00] INFO: Processing manageJenkins[install] action install (sneha-jenkins::default line 21)
+[2018-04-09T09:32:17+00:00] INFO: Processing yum_package[jenkins] action install (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 6)
+[2018-04-09T09:32:18+00:00] INFO: Processing service[jenkins] action enable (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 8)
+[2018-04-09T09:32:18+00:00] INFO: Processing service[jenkins] action start (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 8)
+[2018-04-09T09:32:19+00:00] INFO: service[jenkins] started
+[2018-04-09T09:32:19+00:00] INFO: Processing service[jenkins] action enable (sneha-jenkins::default line 25)
+[2018-04-09T09:32:19+00:00] INFO: Processing service[jenkins] action start (sneha-jenkins::default line 25)
+[2018-04-09T09:32:19+00:00] INFO: service[jenkins] started
+[2018-04-09T09:32:19+00:00] INFO: Chef Run complete in 2.848953447 seconds
+[2018-04-09T09:32:19+00:00] INFO: Running report handlers
+[2018-04-09T09:32:19+00:00] INFO: Report handlers complete
+[2018-04-09T09:32:19+00:00] WARN: *****************************************
+[2018-04-09T09:32:19+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2018-04-09T09:32:19+00:00] WARN: *****************************************
+[2018-04-09T09:32:19+00:00] FATAL: Cannot load configuration from node.json
+[2018-04-09T10:07:09+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/ec2-user/chef-repo
+  One version per cookbook
+
+[2018-04-09T10:07:09+00:00] INFO: Forking chef instance to converge...
+[2018-04-09T10:07:09+00:00] INFO: *** Chef 13.8.5 ***
+[2018-04-09T10:07:09+00:00] INFO: Platform: x86_64-linux
+[2018-04-09T10:07:09+00:00] INFO: Chef-client pid: 28984
+[2018-04-09T10:07:09+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T10:07:10+00:00] INFO: Setting the run_list to ["recipe[sneha-jenkins::default]"] from CLI options
+[2018-04-09T10:07:10+00:00] INFO: Run List is [recipe[sneha-jenkins::default]]
+[2018-04-09T10:07:10+00:00] INFO: Run List expands to [sneha-jenkins::default]
+[2018-04-09T10:07:10+00:00] INFO: Starting Chef Run for ip-10-1-1-145
+[2018-04-09T10:07:10+00:00] INFO: Running start handlers
+[2018-04-09T10:07:10+00:00] INFO: Start handlers complete.
+[2018-04-09T10:07:10+00:00] INFO: Loading cookbooks [sneha-jenkins@0.1.0]
+[2018-04-09T10:07:11+00:00] INFO: Processing execute[install java] action run (sneha-jenkins::default line 8)
+[2018-04-09T10:07:11+00:00] INFO: execute[install java] ran successfully
+[2018-04-09T10:07:11+00:00] INFO: Processing template[/etc/yum.repos.d/jenkins.repo] action create (sneha-jenkins::default line 14)
+[2018-04-09T10:07:11+00:00] INFO: Processing manageJenkins[install] action install (sneha-jenkins::default line 21)
+[2018-04-09T10:07:11+00:00] INFO: Processing yum_package[jenkins] action install (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 6)
+[2018-04-09T10:07:12+00:00] INFO: Processing service[jenkins] action enable (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 8)
+[2018-04-09T10:07:12+00:00] INFO: Processing service[jenkins] action start (/home/ec2-user/chef-repo/.chef/cache/cookbooks/sneha-jenkins/resources/manageJenkins.rb line 8)
+[2018-04-09T10:07:13+00:00] INFO: service[jenkins] started
+[2018-04-09T10:07:13+00:00] INFO: Processing service[jenkins] action enable (sneha-jenkins::default line 25)
+[2018-04-09T10:07:13+00:00] INFO: Processing service[jenkins] action start (sneha-jenkins::default line 25)
+[2018-04-09T10:07:13+00:00] INFO: service[jenkins] started
+[2018-04-09T10:07:13+00:00] INFO: Chef Run complete in 2.930630103 seconds
+[2018-04-09T10:07:13+00:00] INFO: Running report handlers
+[2018-04-09T10:07:13+00:00] INFO: Report handlers complete
+[2018-04-09T10:07:13+00:00] WARN: *****************************************
+[2018-04-09T10:07:13+00:00] WARN: Did not find config file: /solo.rb, using command line options.
+[2018-04-09T10:07:13+00:00] WARN: *****************************************
+[2018-04-09T10:07:13+00:00] FATAL: Cannot load configuration from node.json
